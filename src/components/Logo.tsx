@@ -11,9 +11,10 @@ const Logo = ({ scale, pad, x, text }: LogoProps) => {
     <>
       <span className="flex gap-1 items-center relative">
         <p
-          className={`text-4xl scale-[${scale}] transition-transform font-bold drop-shadow-[0px_0px_1.3px_#EA0029] text-[#EA0029] relative`}
+          style={{ transform: `scale(${scale})` }}
+          className={`text-4xl  transition-transform font-bold drop-shadow-[0px_0px_1.3px_#EA0029] text-[#EA0029] relative`}
         >
-          TED {x ?<span style={{ transform: `scale(${scale > 1 ? scale/1.7 : scale})` }} className={`text-xl absolute -right-4 top-0`}>X</span>:null}
+          TED {x ?<span style={{ transform: `scale(${scale > 1 ? scale/1.3 : scale})` }} className={`text-xl absolute -right-4 top-0`}>X</span>:null}
         </p>
         {text ? (
           <span style={{
