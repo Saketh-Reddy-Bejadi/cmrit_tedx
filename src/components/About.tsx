@@ -1,8 +1,42 @@
+import Logo from "./Logo";
+import { aboutData } from "../../data/aboutData.ts";
 
 const About = () => {
-    return (
-        <div id="about" className="w-full h-screen flex justify-center items-center text-2xl text-white" >About</div>
-    )
-}
+  return (
+      <span
+        id="about"
+        className="xl:px-15 xl:p-10 p-5 grid grid-cols-1 gap-10"
+        style={{backgroundImage: "url('/images/bg.svg", backgroundSize: "cover",backgroundPosition: "center"}}
+      >
+        {aboutData.map((item, index) => (
+          <span
+            key={index}
+            className={`bg-zinc-800/80 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
+              index % 2 !== 0 ? "justify-self-end" : null
+            }`}
+          >
+            <span>
+              <span
+                className={`pl-4 float-left`}
+                style={{ paddingRight: `${item.logoValue.space}px` }}
+              >
+                <Logo
+                  scale={item.logoValue.scale}
+                  pad={item.logoValue.pad}
+                  x={item.logoValue.x}
+                  text={item.logoValue.text}
+                />
+              </span>
+              <span>
+                <p className="pt-[18px] text-base xl:text-lg">
+                  {item.description}
+                </p>
+              </span>
+            </span>
+          </span>
+        ))}
+      </span>
+  );
+};
 
-export default About
+export default About;

@@ -12,3 +12,4 @@ export const navItems: NavItem[] = [
   { name: "Sponsors", path: "/#sponsors", hash: "#sponsors" },
   { name: "Gallery", path: "/#gallery", hash: "#gallery" },
 ];
+

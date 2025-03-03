@@ -6,7 +6,7 @@ import Speakers from "./components/Speakers";
 
 const App = () => {
   return <>
-  <main>
+  <main className="text-white" >
     <Navbar/>
     <Home/>
     <About/>
