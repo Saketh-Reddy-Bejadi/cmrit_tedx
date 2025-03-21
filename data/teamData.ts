@@ -2,7 +2,7 @@ export const teamData = [
   {
     "name": "Md.Farooq",
     "designation": "Licensee",
-    "insta": "https://www.instagram.com/the_underated_guy_/profilecard/?igsh=MWs4N2Vpb3F2MjMwZA==",
+    "insta": "https://www.instagram.com/the_underated_guy_/profilecard/",
     "linkedin": "https://www.linkedin.com/in/md-farooq",
     "img_url": "team/123.jpg"
   },
@@ -23,14 +23,14 @@ export const teamData = [
   {
     "name": "M.Karthik Reddy",
     "designation": "Sponsorship Member",
-    "insta": "https://www.instagram.com/mogullakarthikreddy3?igsh=MjdvMjU5bm44bWx2",
+    "insta": "https://www.instagram.com/mogullakarthikreddy3",
     "linkedin": "www.linkedin.com/in/karthik-mogulla",
     "img_url": "team/karthik.jpg"
   },
   {
     "name": "Ediga Akshaya",
     "designation": "Documentation Member",
-    "insta": "https://www.instagram.com/e.akshaya.07?igsh=ZTR2ZXJjczBmNDZh",
+    "insta": "https://www.instagram.com/e.akshaya.07",
     "linkedin": "www.linkedin.com/in/ediga-akshaya",
     "img_url": "team/akshaya.jpg"
   },
@@ -44,14 +44,14 @@ export const teamData = [
   {
     "name": "SaiManaswini",
     "designation": "Logistics Team Member",
-    "insta": "https://www.instagram.com/itsmeksm?igsh=MWduazdzd3BiNXpyMQ==",
+    "insta": "https://www.instagram.com/itsmeksm",
     "linkedin": "www.linkedin.com/in/kola-saimanswini",
     "img_url": "team/sai manaswini.JPG"
   },
   {
     "name": "Bhanu sri Oguri",
     "designation": "Speaker Curation Lead",
-    "insta": "https://www.instagram.com/_bhanuu07?igsh=c3Y4eWg5bG5vcnd5",
+    "insta": "https://www.instagram.com/_bhanuu07",
     "linkedin": "https://www.linkedin.com/in/bhanu-sri-oguri",
     "img_url": "team/bhanu sri.jpg"
   },
@@ -65,7 +65,7 @@ export const teamData = [
   {
     "name": "Akhila Reddy",
     "designation": "Logistics Team",
-    "insta": "https://www.instagram.com/akhilagorita?igsh=aXlmZm9qbXo1eDQw",
+    "insta": "https://www.instagram.com/akhilagorita",
     "linkedin": "https://www.linkedin.com/in/akhila-gorita",
     "img_url": "https://example.com/chandrika.jpg"
   },
@@ -115,21 +115,21 @@ export const teamData = [
     "name": "Sanjay Vardhan Nerella",
     "designation": "Logistics Lead",
     "insta": "https://www.instagram.com/mr.direwolf__",
-    "linkedin": "www.linkedin.com/in/sanjay-vardhan-nerella",
+    "linkedin": "https://www.linkedin.com/in/sanjay-vardhan-nerella",
     "img_url": "team/sanjay.JPG"
   },
   {
     "name": "Ramya Sri",
     "designation": "Member of Sponsorship Team",
     "insta": "https://www.instagram.com/ramya__reddy__07",
-    "linkedin": "www.linkedin.com/in/ramya-sri-reddy",
+    "linkedin": "https://www.linkedin.com/in/ramya-sri-reddy",
     "img_url": "team/ramya sri.jpg"
   },
   {
     "name": "Reddimalla Kevin",
     "designation": "Logistics",
     "insta": "https://www.instagram.com/___kevo__04",
-    "linkedin": "www.linkedin.com/in/kevin-reddimalla",
+    "linkedin": "https://www.linkedin.com/in/kevin-reddimalla",
     "img_url": "team/kevin.jpg"
   },
   {
@@ -143,14 +143,14 @@ export const teamData = [
     "name": "Chandrika Jampani",
     "designation": "Colicense",
     "insta": "https://www.instagram.com/chandrika_jampani",
-    "linkedin": "www.linkedin.com/in/chandrika-jampani",
+    "linkedin": "https://www.linkedin.com/in/chandrika-jampani",
     "img_url": "team/chandrika.jpg"
   },
   {
     "name": "Srigna Gupta",
     "designation": "Sponsorship member",
     "insta": "https://www.instagram.com/_srigna.gupta_",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/kailasa-srigna-gupta-105339298",
     "img_url": "team/srigna.jpg"
   }
 ]

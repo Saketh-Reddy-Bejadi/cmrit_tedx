@@ -16,7 +16,7 @@ const Team = () => {
             key={index}
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(null)}
-            className={`border-2 border-[#EA0029]/20 rounded-2xl py-6 px-2 h-80`}
+            className={`border-3 border-[#EA0029]/30 rounded-2xl py-6 px-2 h-80`}
           >
             <figure className="w-60 h-56">
               <div
@@ -44,7 +44,9 @@ const Team = () => {
                 } gap-5 py-3 transition-opacity duration-300 `}
               >
                 <Link to={e.insta} target="_blank_"><FaInstagram size={35} /></Link>
-                <FaLinkedin size={35} />
+               
+                <Link to={e.linkedin} target="_blank_"> <FaLinkedin size={35} /></Link>
+               
               </span>
             </div>
           </span>
