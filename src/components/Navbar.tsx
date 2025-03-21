@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
         <section
           onClick={handleMenu}
-          className={`bg-red-800 fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out ${
+          className={`bg-[#EA0029] fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out ${
             menu ? "translate-x-0" : "translate-x-full"
           }`}
         >
