@@ -5,7 +5,7 @@ import { teamData } from "./../../data/teamData";
 import { Link } from "react-router-dom";
 
 const Team = () => {
-  const [hover, setHover] = useState(null);
+  const [hover, setHover] = useState<number | null>(null);
 
   return (
     <div className="pt-30">
