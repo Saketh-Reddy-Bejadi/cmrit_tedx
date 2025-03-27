@@ -11,7 +11,7 @@ const About = () => {
         {aboutData.map((item, index) => (
           <span
             key={index}
-            className={`bg-zinc-800/80 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
+            className={`bg-zinc-950/80 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
               index % 2 !== 0 ? "justify-self-end" : null
             }`}
           >

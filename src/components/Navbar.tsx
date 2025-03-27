@@ -64,6 +64,8 @@ const Navbar = () => {
         <span className="hidden xl:flex gap-12 items-center ease-in-out">
           {navItems.map((link) => (
             <NavLink
+              onClick={()=>{
+              }}
               key={link.name}
               to={link.path}
               className={`${

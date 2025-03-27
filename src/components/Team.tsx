@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { teamData } from "./../../data/teamData";
@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 const Team = () => {
   const [hover, setHover] = useState<number | null>(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    
   return (
     <div className="pt-30">
       <h1 className="text-center text-4xl">Our Team</h1>

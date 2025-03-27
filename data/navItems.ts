@@ -9,6 +9,5 @@ export const navItems: NavItem[] = [
   { name: "About", path: "/#about", hash: "#about" },
   { name: "Speakers", path: "/#speakers", hash: "#speakers" },
   { name: "Sponsors", path: "/#sponsors", hash: "#sponsors" },
-  { name: "Gallery", path: "/#gallery", hash: "#gallery" },
   { name: "Our Team", path: "/our-team", hash: "/our-team" },
 ];

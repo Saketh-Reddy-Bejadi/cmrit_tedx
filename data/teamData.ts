@@ -13,39 +13,39 @@ export const teamData = [
     "linkedin": "https://www.linkedin.com/in/Sameer-goutam06",
     "img_url": "/team/sameer.JPG"
   },
-  {
-    "name": "Saketh Reddy Bejadi",
-    "designation": "Web Development Lead",
-    "insta": "https://www.instagram.com/saketh_reddy_bejadi",
-    "linkedin": "https://www.linkedin.com/in/saketh-reddy-bejadi",
-    "img_url": "/team/saketh.jpg"
-  },
+  // {
+  //   "name": "Saketh Reddy Bejadi",
+  //   "designation": "Web Development Lead",
+  //   "insta": "https://www.instagram.com/saketh_reddy_bejadi",
+  //   "linkedin": "https://www.linkedin.com/in/saketh-reddy-bejadi",
+  //   "img_url": "/team/saketh.jpg"
+  // },
   {
     "name": "M.Karthik Reddy",
     "designation": "Sponsorship Member",
     "insta": "https://www.instagram.com/mogullakarthikreddy3",
-    "linkedin": "www.linkedin.com/in/karthik-mogulla",
+    "linkedin": "https://www.linkedin.com/in/karthik-mogulla",
     "img_url": "team/karthik.jpg"
   },
   {
     "name": "Ediga Akshaya",
     "designation": "Documentation Member",
     "insta": "https://www.instagram.com/e.akshaya.07",
-    "linkedin": "www.linkedin.com/in/ediga-akshaya",
+    "linkedin": "https://www.linkedin.com/in/ediga-akshaya",
     "img_url": "team/akshaya.jpg"
   },
   {
     "name": "L.Thanay Raj",
     "designation": "Curation Member",
     "insta": "https://www.instagram.com/i.thanayraj/",
-    "linkedin": "www.linkedin.com/in/thanay-raj",
+    "linkedin": "https://www.linkedin.com/in/thanay-raj",
     "img_url": "team/thanay.jpg"
   },
   {
     "name": "SaiManaswini",
     "designation": "Logistics Team Member",
     "insta": "https://www.instagram.com/itsmeksm",
-    "linkedin": "www.linkedin.com/in/kola-saimanswini",
+    "linkedin": "https://www.linkedin.com/in/kola-saimanswini",
     "img_url": "team/sai manaswini.JPG"
   },
   {
@@ -58,8 +58,8 @@ export const teamData = [
   {
     "name": "AVNS Pooja",
     "designation": "Design and PR Member",
-    "insta": "instagram.com/_.avns__/",
-    "linkedin": "www.linkedin.com/in/avnspooja",
+    "insta": "https://www.instagram.com/_.avns__/",
+    "linkedin": "https://www.linkedin.com/in/avnspooja",
     "img_url": "https://example.com/chandrika.jpg"
   },
   {
@@ -80,7 +80,7 @@ export const teamData = [
     "name": "Navaneeth Phani",
     "designation": "Sponsorship Team Member",
     "insta": "https://www.instagram.com/phani_xtt",
-    "linkedin": "www.linkedin.com/in/navaneethphani-ravipati",
+    "linkedin": "https://www.linkedin.com/in/navaneethphani-ravipati",
     "img_url": "team/navaneeth.jpg"
   },
   {

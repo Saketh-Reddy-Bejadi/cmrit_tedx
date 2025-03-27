@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 body{
   background-color: black;
   font-family: "Poppins", sans-serif;
@@ -7,4 +6,23 @@ body{
 * {
   scrollbar-width:none;
 }
+.customFont{
+  font-family: "Outfit", sans-serif;
+}
+.shiny-text {
+  background: linear-gradient(90deg, #ad2831,#800e13,#640d14);
+  background-size: 200% 200%;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny 3s linear infinite;
+}
 
+@keyframes shiny {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
