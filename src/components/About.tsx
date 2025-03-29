@@ -5,7 +5,7 @@ const About = () => {
   return (
       <span
         id="about"
-        className="xl:px-15 xl:p-10 p-5 grid grid-cols-1 gap-10"
+        className="xl:px-15 xl:p-10 p-5 grid grid-cols-1 gap-10 scroll-mt-20"
         style={{backgroundImage: "url('/images/bg_desktop.svg", backgroundSize: "cover",backgroundPosition: "center"}}
       >
         {aboutData.map((item, index) => (

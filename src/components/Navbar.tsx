@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-1000 bg-black ">
       <span className="text-white px-7 xl:px-16 py-5 flex items-center justify-between relative">
         <NavLink to={"/"}>
-          <Logo scale={1} pad={17} x={true} text={true}/>
+          <Logo scale={1} pad={17} x={true} text={true} />
         </NavLink>
         <div className="relative w-[45px] h-[45px]">
           <IoCloseSharp
@@ -45,27 +45,36 @@ const Navbar = () => {
         </div>
         <section
           onClick={handleMenu}
-          className={`bg-[#EA0029] fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out ${
+          className={`bg-[#000000] fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out ${
             menu ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <div className="py-20 px-5">
+            <div className="border-b" >
+            <p className="text-2xl px-5 pb-2" >Menu</p>
+            </div>
+            <div className=" px-5 pt-5" >
             {navItems.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
-                className={`block text-white text-3xl py-7 px-7`}
+                className={`block text-white text-2xl py-2 hover:text-[#EA0029] transition-colors duration-500`} 
               >
                 {link.name}
               </NavLink>
             ))}
+            <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
+            <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-2 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 mt-5 text-[22px]">
+              Buy Pass
+            </button>
+          </Link>
+            </div>
           </div>
         </section>
         <span className="hidden xl:flex gap-12 items-center ease-in-out">
           {navItems.map((link) => (
             <NavLink
-              onClick={()=>{
-              }}
+              onClick={() => {}}
               key={link.name}
               to={link.path}
               className={`${
@@ -75,9 +84,11 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
-          <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-2 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500">
-            Buy Pass
-          </button>
+          <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
+            <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-2 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500">
+              Buy Pass
+            </button>
+          </Link>
         </span>
       </span>
     </nav>
