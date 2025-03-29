@@ -6,12 +6,12 @@ const About = () => {
       <span
         id="about"
         className="xl:px-15 xl:p-10 p-5 grid grid-cols-1 gap-10 scroll-mt-20"
-        style={{backgroundImage: "url('/images/bg_desktop.svg", backgroundSize: "cover",backgroundPosition: "center"}}
+        style={{backgroundImage: "url('/images/circles_bg.jpg", backgroundSize: "cover",backgroundPosition: "center"}}
       >
         {aboutData.map((item, index) => (
           <span
             key={index}
-            className={`bg-zinc-950/80 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
+            className={`cardShadow hover:scale-105 transition-all duration-600 bg-[#0d0d0d]/90 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
               index % 2 !== 0 ? "justify-self-end" : null
             }`}
           >

@@ -38,23 +38,23 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="w-full text-2xl text-white flex items-center justify-center flex-wrap py-25 xl:py-15"
+        className="w-full text-2xl text-white flex items-center justify-center flex-wrap py-25 md:py-30 xl:py-15 gap-2"
       >
         <span>
-          <div className="customFont xl:text-8xl text-6xl font-semibold pb-5 tracking-tighter ">
+          <div className="customFont xl:text-8xl text-6xl font-semibold pb-5 tracking-tighter md:text-8xl">
             <h1>
               PARADO
-              <span className="text-[#EA0029] drop-shadow-[2px_-2px_10px_#e7000cdb] font-bold xl:text-9xl text-7xl">
+              <span className="text-[#EA0029] drop-shadow-[2px_-2px_10px_#e7000cdb] font-bold xl:text-9xl text-7xl md:text-9xl">
                 X
               </span>
               &nbsp; OF
             </h1>
-            <h1 className="text-[16vw] xl:text-[10vw] font-semibold xl:leading-30">
+            <h1 className="text-[70px] xl:text-[135px] md:text-[115px] font-semibold xl:leading-30">
               THOUGHTS
             </h1>
           </div>
           <div className="rounded-4xl flex flex-col items-center gap-5">
-            <div className="text-5xl xl:text-7xl font-semibold">
+            <div className="text-5xl xl:text-7xl md:text-7xl font-semibold">
               {timeLeft > 0 ? (
                 <>
                   <h1 className="shiny-text">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
@@ -66,7 +66,7 @@ const Home = () => {
               )}
             </div>
             <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
-              <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-3 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 ">
+              <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white md:px-10 md:py-7 md:rounded-3xl px-5 py-3 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 xl:text-2xl md:text-5xl xl:px-5 xl:py-3">
                 Buy Pass
               </button>
             </Link>
