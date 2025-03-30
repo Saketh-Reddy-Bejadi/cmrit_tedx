@@ -30,8 +30,8 @@ const Team = () => {
               >
                 <img
                   className="object-cover rounded-xl h-[90%]"
-                  src={e.img_url}
-                  alt={`alt text`}
+                  src={e.imgUrl}
+                  alt={e.altText}
                 />
               </div>
             </figure>

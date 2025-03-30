@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#100000] text-white xl:px-10 py-8 px-5">
+    <footer className="bg-[#100000] text-white xl:px-10 px-5 py-5">
       <div className="border-white/80 border-b-2">
         <div className="xl:flex justify-between items-center xl:px-10">
           <div className="xl:w-2/5">
@@ -16,19 +16,19 @@ const Footer = () => {
               drive action globally.
             </p>
           </div>
-          <div className="pb-5">
+          <div className="py-5">
             {navItems.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
-                className={`block text-white text-lg hover:text-[#EA0029] transition-colors duration-500`}
+                className={`block text-white hover:text-[#EA0029] transition-colors duration-500`}
               >
-                {link.name}
+                <p className="text-base" >{link.name}</p>
               </NavLink>
             ))}
           </div>
           <div className="py-2">
-            <h1>Contact us</h1>
+            <h1 className="text-base" >Contact us</h1>
             <div className="flex text-3xl py-3 gap-3">
               <Link
                 className="hover:text-[#EA0029] transition-colors duration-500"
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-center text-lg py-3">
+      <h1 className="text-center text-base pt-3">
         © Copyright TEDxCMRIT Hyderabad. All rights reserved.
       </h1>
     </footer>
