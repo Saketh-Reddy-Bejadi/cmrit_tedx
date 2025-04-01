@@ -13,7 +13,7 @@ const Team = () => {
     
   return (
     <div className="pt-30">
-      <h1 className="text-center text-4xl">Our Team</h1>
+      <h1 className="text-center text-3xl">Our Team</h1>
       <div className=" p-10 w-full flex flex-wrap gap-10 items-center justify-center">
         {teamData.map((e, index) => (
           <span

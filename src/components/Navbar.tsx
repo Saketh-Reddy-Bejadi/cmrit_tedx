@@ -55,7 +55,7 @@ const Navbar = () => {
           />
         </div>
         <section
-          className={`bg-[#100000] fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out overflow-hidden ${
+          className={`bg-[#330000] fixed top-0 right-0 w-full h-screen transition-transform duration-500 ease-in-out overflow-hidden ${
             menu ? "translate-x-0" : "translate-x-full"
           }`}
         >

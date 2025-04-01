@@ -5,9 +5,9 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#100000] text-white xl:px-10 px-5 py-5">
+    <footer className="bg-[#330000] text-white xl:px-10 px-5 py-5">
       <div className="border-white/80 border-b-2">
-        <div className="xl:flex justify-between items-center xl:px-10">
+        <div className="xl:flex justify-between items-center xl:px-10 py-2">
           <div className="xl:w-2/5">
             <Logo scale={1} pad={17} x={true} text={true} />
             <p className="text-sm xl:text-base pt-2">

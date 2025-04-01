@@ -66,7 +66,7 @@ const Home = () => {
               )}
             </div>
             <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
-              <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white md:px-10 md:py-7 md:rounded-3xl px-5 py-3 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 xl:text-2xl md:text-5xl xl:px-5 xl:py-3">
+              <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white md:px-10 md:py-7 md:rounded-2xl px-6 py-3 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 xl:text-2xl md:text-5xl xl:px-6 xl:py-3">
                 Buy Pass
               </button>
             </Link>
