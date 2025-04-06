@@ -74,7 +74,7 @@ const Navbar = () => {
                   {link.name}
                 </NavLink>
               ))}
-              <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
+              <Link to={"https://events.studenttribe.in/event/67ed2176e5c536d5cef4f7b1"}>
                 <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-2 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500 mt-5 text-[22px]">
                   Buy Pass
                 </button>
@@ -95,7 +95,7 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
-          <Link to={"https://forms.gle/3BqrY8EbFvxCQ4yZ9"}>
+          <Link to={"https://events.studenttribe.in/event/67ed2176e5c536d5cef4f7b1"}>
             <button className="drop-shadow-[2px_-2px_10px_#e7000cdb] cursor-pointer bg-[#EA0029] text-white px-5 py-2 rounded-2xl hover:bg-[#ea002b9b] transition-colors duration-500">
               Buy Pass
             </button>

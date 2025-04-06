@@ -9,7 +9,7 @@ interface LogoProps {
 const Logo = ({ scale, pad, x, text }: LogoProps) => {
   return (
     <>
-      <span className="flex gap-1 items-center relative">
+      <span className="flex gap-1 items-center relative select-none pointer-events-none">
         <p
           style={{ transform: `scale(${scale})` }}
           className={`text-4xl  transition-transform font-bold drop-shadow-[0px_0px_1.3px_#EA0029] text-[#EA0029] relative`}
