@@ -10,13 +10,13 @@ const Speakers: React.FC = () => {
   return (
     <div id="speakers" className="py-27" >
         <h1 className="text-3xl text-center pb-10">Speakers</h1>
-      <div className="w-full overflow-hidden group">
+      <div className="w-full overflow-x-hidden group">
         <div className={`flex gap-5 py-5 w-max animate-marquee pause-on-hover`}>
           {[...SPEAKERS_DATA, ...SPEAKERS_DATA].map((speaker, id) => (
             <div
               onClick={() => setSelectedSpeaker(speaker)}
               key={id}
-              className="h-fit w-80 p-5 rounded-2xl  text-center hover:scale-105 transition-all duration-500"
+              className="h-fit w-80 px-5 rounded-2xl  text-center hover:scale-105 transition-all duration-500"
             >
               <img
                 className="rounded-lg h-10/12"

@@ -34,7 +34,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({ speaker, onClose }) => {
 
 
   return (
-    <div className={`fixed inset-0 flex justify-center items-center z-2000 p-4 backdrop-blur-xs transition-opacity duration-300 ease-in-out ${visible ? "opacity-100" : "opacity-0"}`}>
+    <div className={`fixed inset-0 flex justify-center items-center z-2000 p-4 backdrop-blur-[2px] transition-opacity duration-300 ease-in-out ${visible ? "opacity-100" : "opacity-0"}`}>
       <div className={`bg-[#100000] p-10 rounded-lg max-w-xl w-full max-h-[85vh] overflow-y-auto relative border border-[#EA0029]/20 transform transition-transform duration-300 ease-in-out ${ visible ? "scale-100" : "scale-95"} `}>
         <IoCloseSharp
           onClick={onClose}
