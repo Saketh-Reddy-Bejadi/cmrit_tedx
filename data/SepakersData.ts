@@ -93,7 +93,7 @@ export const SPEAKERS_DATA = [
     socials: [
       {
         Insta: "mohan__reddyy",
-        Linkedin: "",
+        Linkedin: "mohan-reddy-a56b48179",
       },
     ],
   },
@@ -112,7 +112,7 @@ export const SPEAKERS_DATA = [
   {
     name: "Sri Charan Lakkaraju",
     title: "Founder and CEO of Student Tribe",
-    imgUrl: "speakers/",
+    imgUrl: "speakers/Sri Charan Lakkaraju.jpg",
     desc: "Sri Charan Lakkaraju, Founder and CEO of Student Tribe, was featured in Forbes 30 Under 30 Asia (2018) and is also a TEDx speaker. His vision of building India's largest student community has created a significant impact, especially across Tier 2 and Tier 3 colleges. By providing access to workshops, events, and developmental opportunities often lacking in these regions, his leadership has empowered over 600,000 students. Through Student Tribe, he continues to bridge the gap in education and opportunity for the youth.",
     socials: [
       {

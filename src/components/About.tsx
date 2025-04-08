@@ -11,7 +11,7 @@ const About = () => {
         {aboutData.map((item, index) => (
           <span
             key={index}
-            className={`cardShadow hover:scale-105 transition-all duration-600 bg-[#0d0d0d]/90 xl:p-10 p-8 rounded-2xl xl:w-7/12 ${
+            className={`cardShadow hover:scale-105 transition-all duration-600 bg-[#0d0d0d]/90 xl:p-10 p-8 rounded-2xl xl:w-7/12 md:w-8/12 ${
               index % 2 !== 0 ? "justify-self-end" : null
             }`}
           >

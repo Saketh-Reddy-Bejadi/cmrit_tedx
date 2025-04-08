@@ -52,7 +52,7 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="w-full text-2xl text-white flex items-center justify-center flex-wrap py-25 md:py-30 xl:py-15 gap-2"
+        className="w-full text-2xl text-[#fff6e8] flex items-center justify-center flex-wrap py-25 md:py-30 xl:py-15 gap-2"
       >
         <span>
           <div className="customFont xl:text-8xl text-6xl font-semibold pb-5 tracking-tighter md:text-8xl">
