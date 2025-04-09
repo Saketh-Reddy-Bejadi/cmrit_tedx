@@ -2,9 +2,9 @@ export const teamData = [
   {
     "name": "Md.Farooq",
     "designation": "Licensee",
-    "insta": "https://www.instagram.com/the_underated_guy_/profilecard/",
+    "insta": "https://www.instagram.com/the_underated_guy_",
     "linkedin": "https://www.linkedin.com/in/md-farooq",
-    "imgUrl": "team/123.jpg",
+    "imgUrl": "team/farooq.jpg",
     "altText": "Image of Md.Farooq"
   },
   {
@@ -16,17 +16,17 @@ export const teamData = [
     "altText": "Image of Chandrika Jampani"
   },
   {
-    "name": "Bhanu sri Oguri",
+    "name": "Bhanu Sri Oguri",
     "designation": "Curation Lead",
     "insta": "https://www.instagram.com/_bhanuu07",
     "linkedin": "https://www.linkedin.com/in/bhanu-sri-oguri",
     "imgUrl": "team/bhanu sri.jpg",
-    "altText": "Image of Bhanu sri Oguri"
+    "altText": "Image of Bhanu Sri Oguri"
   },
   {
     "name": "Charitha Challa",
     "designation": "Documentation Lead",
-    "insta": "https://www.instagram.com/charitha_0103/?hl=en",
+    "insta": "https://www.instagram.com/charitha_0103",
     "linkedin": "https://www.linkedin.com/in/charitha-challa/",
     "imgUrl": "team/charitha.jpg",
     "altText": "Image of Charitha Challa"
@@ -68,7 +68,7 @@ export const teamData = [
     "designation": "Logistics Member",
     "insta": "https://www.instagram.com/akhilagorita",
     "linkedin": "https://www.linkedin.com/in/akhila-gorita",
-    "imgUrl": "https://example.com/chandrika.jpg",
+    "imgUrl": "team/Akhila Reddy.jpg",
     "altText": "Image of Akhila Reddy"
   },
   {
@@ -84,7 +84,7 @@ export const teamData = [
     "designation": "Design and PR Member",
     "insta": "https://www.instagram.com/_.avns__/",
     "linkedin": "https://www.linkedin.com/in/avnspooja",
-    "imgUrl": "https://example.com/chandrika.jpg",
+    "imgUrl": "team/pooja.jpg",
     "altText": "Image of AVNS Pooja"
   },  
   {
@@ -109,7 +109,7 @@ export const teamData = [
     "insta": "https://www.instagram.com/mogullakarthikreddy3",
     "linkedin": "https://www.linkedin.com/in/karthik-mogulla",
     "imgUrl": "team/karthik.jpg",
-    "altText": "Image of M.Karthik Reddy"
+    "altText": "Image of Karthik Reddy"
   },
   {
     "name": "Navaneeth Phani",
@@ -120,12 +120,28 @@ export const teamData = [
     "altText": "Image of Navaneeth Phani"
   },
   {
+    "name": "Naveen",
+    "designation": "Sponsorship Member",
+    "insta": "https://www.instagram.com/naveen_17171/",
+    "linkedin": "https://www.linkedin.com/in/nunna-mohana-aruna-kiran-naveen-bb18172bb",
+    "imgUrl": "team/Naveen.jpg",
+    "altText": "Image of Naveen"
+  },
+  {
     "name": "Polu Ishwanth",
     "designation": "Sponsorship Member",
     "insta": "https://www.instagram.com/ishwanth_25",
     "linkedin": "https://www.linkedin.com/in/ishwanth-polu-b124442a3",
     "imgUrl": "team/ishwanth.jpg",
     "altText": "Image of Polu Ishwanth"
+  },
+  {
+    "name": "Sai Prathyusha",
+    "designation": "Logistics Member",
+    "insta": "https://www.instagram.com/saiprathyusha_roy",
+    "linkedin": "https://www.linkedin.com/in/b-sai-pratyusha-b42877352/",
+    "imgUrl": "team/Sai Prathyusha.jpg",
+    "altText": "Image of Sai Prathyusha"
   },
   {
     "name": "Ramya Sri",
@@ -144,12 +160,20 @@ export const teamData = [
     "altText": "Image of Reddimalla Kevin"
   },
   {
+    "name": "Ruthvika Sri kamala",
+    "designation": "Sponsorship Member",
+    "insta": "https://www.instagram.com/ruthvika_0510",
+    "linkedin": "https://www.linkedin.com/in/ruthvika-sri-kamala",
+    "imgUrl": "team/ruthwika.jpg",
+    "altText": "Image of Ruthvika Sri kamala"
+  },
+  {
     "name": "Sai Manaswini",
     "designation": "Logistics Member",
     "insta": "https://www.instagram.com/itsmeksm",
     "linkedin": "https://www.linkedin.com/in/kola-saimanswini",
     "imgUrl": "team/sai manaswini.JPG",
-    "altText": "Image of SaiManaswini"
+    "altText": "Image of Sai Manaswini"
   },
   {
     "name": "Sameer Goutam Ravilla",
@@ -165,6 +189,14 @@ export const teamData = [
     "insta": "https://www.instagram.com/_srigna.gupta_",
     "linkedin": "https://www.linkedin.com/in/kailasa-srigna-gupta-105339298",
     "imgUrl": "team/srigna.jpg",
+    "altText": "Image of Srigna Gupta"
+  },
+  {
+    "name": "Srita Vakiti",
+    "designation": "Documentation Member",
+    "insta": "https://www.instagram.com/blingbling_cashy",
+    "linkedin": "https://www.linkedin.com/in/sritavakiti",
+    "imgUrl": "team/Srita Vakiti.jpg",
     "altText": "Image of Srigna Gupta"
   },
   {

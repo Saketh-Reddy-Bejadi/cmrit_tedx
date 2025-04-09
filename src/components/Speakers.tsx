@@ -8,20 +8,21 @@ const Speakers: React.FC = () => {
   >(null);
 
   return (
-    <div id="speakers" className="py-27" >
-        <h1 className="text-3xl text-center pb-10">Speakers</h1>
+    <div id="speakers" className="py-27">
+      <h1 className="text-3xl text-center pb-10">Speakers</h1>
       <div className="w-full overflow-x-hidden group">
         <div className={`flex gap-5 py-5 w-max animate-marquee pause-on-hover`}>
           {[...SPEAKERS_DATA, ...SPEAKERS_DATA].map((speaker, id) => (
             <div
               onClick={() => setSelectedSpeaker(speaker)}
               key={id}
-              className="h-fit w-80 px-5 rounded-2xl  text-center hover:scale-105 transition-all duration-500"
+              className="h-fit w-80 px-5 rounded-2xl  text-center hover:scale-105 transition-all duration-500 select-none"
             >
               <img
                 className="rounded-lg h-10/12"
                 src={speaker.imgUrl}
                 alt="img"
+                onContextMenu={(e) => e.preventDefault()}
               />
               <p className="pt-3 text-lg">{speaker.name}</p>
             </div>

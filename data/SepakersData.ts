@@ -121,4 +121,40 @@ export const SPEAKERS_DATA = [
       },
     ],
   },
+  {
+    name: "Jyothi Reddy Ghanta",
+    title: "Visionary Educationist & Community Leader",
+    imgUrl: "speakers/Jyothi Reddy.jpg",
+    desc: "Dr. Jyothi Reddy Ghanta, Director of Education at The Shri Ram Hyderabad Schools, is a visionary leader with over two decades in education. As the founding principal, she played a key role in launching impactful institutions and innovative learning models. A certified life coach and award-winning educationist, she's known for her commitment to empowering both students and educators. Her social initiatives and leadership through Rotary and NGOs reflect her deep dedication to community development.",
+    socials: [
+      {
+        Insta: "tsrahyderabad",
+        Linkedin: "rtn-dr-jyothi-reddy-74ba2727",
+      },
+    ],
+  },
+  {
+    name: "Gowrav Reddy",
+    title: "Fitness Visionary & CEO of FitneX",
+    imgUrl: "speakers/Gowrav Reddy.png",
+    desc: "Gowrav Reddy is a seasoned fitness coach and entrepreneur, serving as the Chief Marketing Officer (CMO) at CropWings and the Chief Executive Officer (CEO) of FitneX. With over six years of experience in the fitness industry, he has been recognized as an ICN Mr. India Silver medalist and is a prominent fitness influencer and model. His mission centers on promoting a healthier lifestyle and contributing to a fitter future for India. Through his ventures, Gowrav is dedicated to redefining fitness for the next generation, offering services such as personal training, competition preparation, fitness apparel, private fitness clubs, and corporate wellness programs.",
+    socials: [
+      {
+        Insta: "mr.gowravreddy",
+        Linkedin: "gowravreddy",
+      },
+    ],
+  },
+  {
+    name: "Karthik Nagapuri",
+    title: "AI Innovator & Founder of EvolveX Spaces",
+    imgUrl: "speakers/Karthik Nagapuri.jpg",
+    desc: "Karthik Nagapuri is a distinguished AI engineer and the Founder & CEO of EvolveX Spaces. He has founded multiple ventures and collaborated with over 15 startups and 4 government bodies to drive technological innovation. Recognized as a Suzuki Fellow, Emergent Ventures grantee, and Kairos Business Fellow, his leadership journey stands out in the entrepreneurial landscape. He also served as an Incubation Manager Fellow at Edventure Park. His expertise in AI and Indian Knowledge Systems reflects his commitment to bridging startup ecosystems across India.",
+    socials: [
+      {
+        Insta: "karthiknagpuri",
+        Linkedin: "karthiknagpuri",
+      },
+    ],
+  },
 ];
