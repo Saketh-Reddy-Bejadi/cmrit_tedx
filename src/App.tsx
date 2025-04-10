@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
 import Team from "./components/Team";
+import Sponsors from "./components/Sponsors";
 
 const App = () => {
   return <>
@@ -15,6 +16,7 @@ const App = () => {
         <>
         <Home />
         <About />
+        <Sponsors/>
         <Speakers />
         </>
       }/>
