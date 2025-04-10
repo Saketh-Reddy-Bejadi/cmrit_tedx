@@ -1,7 +1,8 @@
 import { SPONSORS } from "./../../data/sponsorsData";
 const Sponsors = () => {
   return (
-    <div className="flex flex-col items-center w-full p-20">
+    <div id="sponsors" className="scroll-mt-20
+    flex flex-col items-center w-full p-20">
       <h1 className="text-3xl text-center pb-15">Sponsors</h1>
       <div className="flex flex-wrap gap-15 justify-center">
         {SPONSORS.map((ele, id) => (

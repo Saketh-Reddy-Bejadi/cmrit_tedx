@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
 import Team from "./components/Team";
 import Sponsors from "./components/Sponsors";
+import TicketSearch from "./components/Ticket";
 
 const App = () => {
   return <>
@@ -21,6 +22,7 @@ const App = () => {
         </>
       }/>
       <Route path="/our-team" element={<Team />} />
+      <Route path="/tickets" element={<TicketSearch/>} />
     </Routes>
     <Footer />
   </main>
