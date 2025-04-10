@@ -1,61 +1,86 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TICKETDATA, Ticket } from "../../data/TicketData.ts";
 import ticketImg from "/images/ticket.jpg";
+import { db } from "../firebase";
+import {
+  collection,
+  getDocs,
+  query,
+  where,
+  doc,
+  updateDoc,
+} from "firebase/firestore";
+
+interface Ticket {
+  name: string;
+  email: string;
+  phone: string;
+  uniqueID: string;
+  entered: boolean;
+  id: string;
+}
 
 const TicketVerifier: React.FC = () => {
   const [search, setSearch] = useState("");
-  const [tickets, setTickets] = useState<Ticket[]>(TICKETDATA);
   const [foundTicket, setFoundTicket] = useState<Ticket | null>(null);
   const [verified, setVerified] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
-   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const handleSearch = () => {
-    const found = tickets.find(
-      t => t.phone === search.trim() || t.uniqueID === search.trim()
+  const handleSearch = async () => {
+    const trimmed = search.trim();
+
+    const q = query(collection(db, "tickets"), where("phone", "==", trimmed));
+    const alt = query(
+      collection(db, "tickets"),
+      where("uniqueID", "==", trimmed)
     );
-        if (!found) {
+
+    const querySnapshot = await getDocs(q);
+    const altSnapshot = await getDocs(alt);
+
+    const docs = querySnapshot.docs.length
+      ? querySnapshot.docs
+      : altSnapshot.docs;
+
+    if (docs.length === 0) {
       setFoundTicket(null);
-      setVerified(false);
-      setErrorMsg("❌ No ticket found for this number");
+      setErrorMsg("❌ No ticket found");
       return;
     }
 
-    if (found.entered) {
+    const data = { ...docs[0].data(), id: docs[0].id } as Ticket;
+
+    if (data.entered) {
       setFoundTicket(null);
-      setVerified(false);
       setErrorMsg("⚠️ Ticket already used for entry");
       return;
     }
 
-    setFoundTicket(found);
-    setVerified(false);
+    setFoundTicket(data);
     setErrorMsg("");
   };
 
-  const handleVerify = () => {
+  const handleVerify = async () => {
     if (!foundTicket) return;
-  
-    const updatedTickets = tickets.map((t) =>
-      t.phone === foundTicket.phone ? { ...t, entered: true } : t
-    );
-  
-    setTickets(updatedTickets);
+
+    const ticketRef = doc(db, "tickets", foundTicket.id);
+
+    await updateDoc(ticketRef, {
+      entered: true,
+    });
+
     setVerified(true);
     setFoundTicket({ ...foundTicket, entered: true });
-  
+
     setTimeout(() => {
-      setSearch("");
-      setFoundTicket(null);
-      setVerified(false);
-      setErrorMsg("");
-    }, 1500);
+      reset();
+    }, 4000);
   };
-  
+
   const reset = () => {
     setSearch("");
     setFoundTicket(null);
@@ -67,13 +92,13 @@ const TicketVerifier: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10">
       <h1 className="text-3xl font-bold mb-6">🎟️ Ticket Verifier</h1>
 
-      <div className="flex gap-2 mb-6">
+      <div className="flex gap-2 mb-6 flex-wrap justify-center">
         <input
           type="text"
           placeholder="Enter ID or number"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="px-4 w-7/10 py-2 border border-gray-300 rounded-md shadow-sm"
+          className="px-4 w-72 py-2 border border-gray-300 rounded-md shadow-sm"
         />
         {!foundTicket ? (
           <button
@@ -109,14 +134,13 @@ const TicketVerifier: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="text-white rounded-lg shadow-md p-6 xl:w-10/12 text-center"
+            className="text-white rounded-lg shadow-md p-6 w-full max-w-2xl text-center"
           >
             <div className="flex justify-center relative">
-              <p className="absolute rotate-270 xl:top-20 xl:right-58 xl:text-lg text-[6px] right-[59px] top-9">
-                {" "}
+              <p className="absolute -rotate-90 text-xs right-10 top-10">
                 {foundTicket.uniqueID}
               </p>
-              <img className="xl:w-10/12" src={ticketImg} alt="Ticket Img" />
+              <img className="w-full max-w-xl" src={ticketImg} alt="Ticket" />
             </div>
             <h2 className="text-lg font-semibold text-blue-700 mb-2">
               Ticket Found
