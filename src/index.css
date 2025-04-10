@@ -35,7 +35,7 @@ body{
   100%{transform: translateX(-52%);}
 }
 .animate-marquee{
-  animation: marquee 20s linear infinite;
+  animation: marquee 55s linear infinite;
 }
 .group:hover .pause-on-hover {
   animation-play-state: paused;
