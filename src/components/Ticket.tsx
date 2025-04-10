@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TICKETDATA, Ticket } from "../../data/TicketData.ts";
 import ticketImg from "/images/ticket.jpg";
@@ -9,6 +9,10 @@ const TicketVerifier: React.FC = () => {
   const [foundTicket, setFoundTicket] = useState<Ticket | null>(null);
   const [verified, setVerified] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   const handleSearch = () => {
     const found = tickets.find(
