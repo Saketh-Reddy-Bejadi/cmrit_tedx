@@ -25,6 +25,23 @@ const TicketVerifier: React.FC = () => {
   const [foundTicket, setFoundTicket] = useState<Ticket | null>(null);
   const [verified, setVerified] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  const [totalCount, setTotalCount] = useState(0);
+  const [verifiedCount, setVerifiedCount] = useState(0);
+
+  useEffect(() => {
+    const fetchCounts = async () => {
+      const querySnapshot = await getDocs(collection(db, "tickets"));
+      const total = querySnapshot.size;
+      const verified = querySnapshot.docs.filter(
+        (doc) => doc.data().entered
+      ).length;
+
+      setTotalCount(total);
+      setVerifiedCount(verified);
+    };
+
+    fetchCounts();
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -72,7 +89,7 @@ const TicketVerifier: React.FC = () => {
     await updateDoc(ticketRef, {
       entered: true,
     });
-
+    setVerifiedCount((prev) => prev + 1);
     setVerified(true);
     setFoundTicket({ ...foundTicket, entered: true });
 
@@ -91,6 +108,10 @@ const TicketVerifier: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10">
       <h1 className="text-3xl font-bold mb-6">🎟️ Ticket Verifier</h1>
+      <div className="text-center mb-4">
+        <p className="text-gray-700">🎫 Total Tickets: {totalCount}</p>
+        <p className="text-green-700">✅ Verified Entries: {verifiedCount}</p>
+      </div>
 
       <div className="flex gap-2 mb-6 flex-wrap justify-center">
         <input
@@ -137,7 +158,7 @@ const TicketVerifier: React.FC = () => {
             className="text-white rounded-lg shadow-md p-6 w-full max-w-2xl text-center"
           >
             <div className="flex justify-center relative">
-              <p className="absolute -rotate-90 text-xs right-10 top-10">
+              <p className="absolute -rotate-90 text-[7px] xl:right-28.5 xl:top-12 right-14 top-8 md:text-sm md:right-27.5 md:top-11 ">
                 {foundTicket.uniqueID}
               </p>
               <img className="w-full max-w-xl" src={ticketImg} alt="Ticket" />
