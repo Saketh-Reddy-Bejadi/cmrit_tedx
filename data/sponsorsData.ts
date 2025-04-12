@@ -2,6 +2,12 @@ export const SPONSORS = [
     {
         title: "",
         designation: "",
+        imgUrl: "sponsors/VIVO.jpg",
+        imgAlt: "VIVO's Logo",
+    },
+    {
+        title: "",
+        designation: "",
         imgUrl: "sponsors/GOBYK LOGO.png",
         imgAlt: "GOBYK's Logo",
     },
